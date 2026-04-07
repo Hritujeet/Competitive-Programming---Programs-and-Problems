@@ -9,6 +9,14 @@ int main()
 
     int totalCostOfBananas = k * (w * (w + 1) / 2);
     int borrowedAmount = totalCostOfBananas - n;
-    cout << borrowedAmount;
+    
+    if (borrowedAmount < 0)
+    {
+        cout << 0;
+    }
+    else {
+        cout << borrowedAmount;
+    }
+    
     return 0;
 }
